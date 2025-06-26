@@ -3,6 +3,7 @@ import Container from "./Container";
 import HeadingLabel from "./HeadingLabel";
 import icons from "../icons";
 import SectionHeading from "./SectionHeading";
+import Image from "next/image";
 
 export default function FeaturedDestinations() {
     const destinations = [
@@ -59,7 +60,7 @@ export default function FeaturedDestinations() {
                         >
                             <div className="flex flex-col gap-6 @min-xl:flex-row">
                                 <div className="relative basis-0 grow">
-                                    <img
+                                    <Image
                                         src={dest.image}
                                         alt=""
                                         className="aspect-square w-full object-center object-cover rounded-2xl"

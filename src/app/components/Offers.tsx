@@ -18,10 +18,10 @@ export default function Offers() {
                         </SectionHeading>
 
                         <p className="mb-4">
-                           "Imagina despertarte frente al mar en un gran Hotel ... 
-                           ¿Sabías que puede ser más económico de lo que piensas?"
-                          Nos especializamos en hacer realidad esos momentos mágicos con precios inteligentes y asesoría personalizada. 
-                          ¡Tu escapada perfecta empieza aquí!
+                            Imagina despertarte frente al mar en un gran Hotel ... 
+                            ¿Sabías que puede ser más económico de lo que piensas?
+                            Nos especializamos en hacer realidad esos momentos mágicos con precios inteligentes y asesoría personalizada. 
+                            ¡Tu escapada perfecta empieza aquí!
                         </p>
 
                         <WhiteExternalButton text="Explore Mas" bordered />

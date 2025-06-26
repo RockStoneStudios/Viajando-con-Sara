@@ -3,6 +3,7 @@ import Container from "./Container";
 import HeadingLabel from "./HeadingLabel";
 import Benefit from "./Benefit";
 import SectionHeading from "./SectionHeading";
+import Image from "next/image";
 
 export default function Benefits() {
     const benefits_g1 = [
@@ -50,11 +51,10 @@ export default function Benefits() {
                             ))}
                         </div>
                         <div className="flex justify-center items-start">
-                            <img
-                                src="/images/benefits.jpg"
-                                alt=""
-                                className="rounded-md w-full min-w-72 max-w-80"
-                            />
+                            import Image from 'next/image'
+
+                             <Image src="/images/tour.jpg" alt="Tour" width={500} height={300} className="w-full" />
+
                         </div>
                         <div className="flex flex-col gap-y-16">
                             {benefits_g2.map((benefit, i) => (

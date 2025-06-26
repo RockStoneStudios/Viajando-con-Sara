@@ -4,6 +4,7 @@ import HeadingLabel from "./HeadingLabel";
 import SectionHeading from "./SectionHeading";
 import icons from "../icons";
 import WhiteExternalButton from "./WhiteExternalButton";
+import Image from "next/image";
 
 export default function Social() {
     const posts = [
@@ -40,7 +41,7 @@ export default function Social() {
                                 <div className="absolute top-0 bottom-0 left-0 right-0 bg-white flex items-center justify-center opacity-0 group-hover:opacity-80 duration-300 z-10">
                                     <WhiteExternalButton text="Explore Mas" bordered />
                                 </div>
-                                <img
+                                <Image
                                     src={post.image}
                                     alt=""
                                     className="h-full object-cover object-center group-hover:scale-115 duration-300"

@@ -1,6 +1,8 @@
 import React from "react";
 import Container from "./Container";
 import icons from "../icons";
+import Image from "next/image";
+
 
 export default function MoreOffers() {
     return (
@@ -23,7 +25,7 @@ export default function MoreOffers() {
                             </button>
                         </div>
                         <div className="basis-0 grow">
-                            <img src="/images/offer-2.jpg" alt="" />
+                            <Image src="/images/offer-2.jpg" alt="" />
                         </div>
                     </div>
 
@@ -43,7 +45,7 @@ export default function MoreOffers() {
                             </button>
                         </div>
                         <div className="basis-0 grow">
-                            <img src="/images/offer-3.jpg" alt="" />
+                            <Image src="/images/offer-3.jpg" alt="" />
                         </div>
                     </div>
                 </div>

@@ -2,6 +2,7 @@ import React from "react";
 import SectionHeading from "./SectionHeading";
 import PrimaryButton from "./PrimaryButton";
 import icons from "../icons";
+import Image from "next/image";
 
 export default function CTA() {
     return (
@@ -15,12 +16,12 @@ export default function CTA() {
                     <SectionHeading>
                         Unete a nuestra  <span className="text-orange-600">Gran Aventura</span>
                     </SectionHeading>
-
-                    <p className="max-w-2xl mb-4">
-                       Viaja con Sara te lleva a los destinos más fascinantes, con itinerarios personalizados y atención dedicada en cada paso.
+                        <p className="max-w-2xl mb-4">
+                        Viaja con Sara te lleva a los destinos más fascinantes, con itinerarios personalizados y atención dedicada en cada paso.
                         Vive la emoción de explorar playas paradisíacas, 
-                       ciudades llenas de cultura y paisajes inolvidables. ¡Tu viaje soñado comienza aquí!"
-                    </p>
+                        ciudades llenas de cultura y paisajes inolvidables. ¡Tu viaje soñado comienza aquí!
+                        </p>
+
 
                     <PrimaryButton>
                         <div className="flex items-center gap-x-2 fill-white">
@@ -31,7 +32,7 @@ export default function CTA() {
                 </div>
 
                 <div>
-                    <img src="/images/cta-2.jpg" alt="" className="max-w-100 max-h-80 object-cover object-center" />
+                    <Image src="/images/cta-2.jpg" alt="" className="max-w-100 max-h-80 object-cover object-center" />
                 </div>
             </div>
         </section>
