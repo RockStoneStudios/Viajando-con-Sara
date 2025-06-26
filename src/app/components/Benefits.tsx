@@ -35,7 +35,7 @@ export default function Benefits() {
         <section className="py-40">
             <Container>
                 <div className="flex flex-col items-center gap-y-6">
-                    <HeadingLabel text="Benefits" />
+                    <HeadingLabel text="Beneficios" />
 
                     <SectionHeading>
                         Por qué te encantará viajar con 
@@ -51,7 +51,7 @@ export default function Benefits() {
                             ))}
                         </div>
                         <div className="flex justify-center items-start">
-                            import Image from 'next/image'
+                        
 
                              <Image src="/images/tour.jpg" alt="Tour" width={500} height={300} className="w-full" />
 
