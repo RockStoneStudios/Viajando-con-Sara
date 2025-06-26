@@ -15,13 +15,30 @@ export default function Home() {
         <div className="relative">
             <Navbar />
             <Hero />
-            <Benefits />
-            <FeaturedDestinations />
-            <Offers />
-            <MoreOffers />
-            <ScrollingOffers />
-            <Reviews />
-            <Social />
+            <section id="benefits">
+                 <Benefits />
+            </section>
+             <section id="destinos">
+              <FeaturedDestinations />
+            </section>
+            <section id="paquetes">
+                  <Offers />
+            </section>
+
+            <section id="vuelos">
+                 <MoreOffers />
+            </section>
+            <section id="guias">
+             <ScrollingOffers />
+            </section>
+            <section id="nosotros">
+                <Reviews />
+            </section>
+
+            <section id="contacto">
+             <Social />
+            </section>
+
             <CTA />
             <Footer />
 

@@ -26,26 +26,25 @@ export default function Navbar() {
                 </div>
 
                 <div className={`${active ? "flex" : "hidden"} flex-col md:flex-row items-center gap-4 order-3 grow w-full mt-4 xl:order-[revert] xl:mt-0 xl:w-auto xl:grow-0 md:flex`}>
-                      <a href="#">Destinos</a>
+                      <a href="#destinos">Destinos</a>
                         <span className="h-4 w-px bg-gray-300"></span>
-                        <a href="#">Paquetes Turísticos</a>
+                        <a href="#paquetes">Paquetes Turísticos</a>
                         <span className="h-4 w-px bg-gray-300"></span>
-                        <a href="#">Vuelos y Hoteles</a>
+                        <a href="#vuelos">Vuelos y Hoteles</a>
                         <span className="h-4 w-px bg-gray-300"></span>
-                        <a href="#">Guías de Viaje</a>
+                        <a href="#guias">Guías de Viaje</a>
                         <span className="h-4 w-px bg-gray-300"></span>
-                        <a href="#">Sobre Nosotros</a>
+                        <a href="#nosotros">Sobre Nosotros</a>
                         <span className="h-4 w-px bg-gray-300"></span>
-                        <a href="#">Contacto</a>
+                        <a href="https://wa.me/573004526484">Contacto</a>
                 </div>
 
-                <div className="flex items-center gap-x-6">
-                    {/* <button className="hover:cursor-pointer">{icons.search}</button>
-                    <button className="hover:cursor-pointer">{icons.heart}</button> */}
+               <div className="hidden md:flex items-center gap-x-6">
                     <PrimaryButton>
-                        Book Flight
+                        Reserva
                     </PrimaryButton>
                 </div>
+
             </nav>
         </Container>
     );
