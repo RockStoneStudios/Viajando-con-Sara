@@ -6,7 +6,6 @@ import Hero from "./components/Hero";
 import MoreOffers from "./components/MoreOffers";
 import Navbar from "./components/Navbar";
 import Offers from "./components/Offers";
-import Products from "./components/Products";
 import Reviews from "./components/Reviews";
 import ScrollingOffers from "./components/ScrollingOffers";
 import Social from "./components/Social";
