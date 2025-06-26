@@ -1,6 +1,5 @@
 import React from "react";
 import SectionHeading from "./SectionHeading";
-import Container from "./Container";
 import PrimaryButton from "./PrimaryButton";
 import icons from "../icons";
 

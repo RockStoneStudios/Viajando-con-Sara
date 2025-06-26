@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "./Container";
-import icons from "../icons";
 import HeadingLabel from "./HeadingLabel";
 import Benefit from "./Benefit";
 import SectionHeading from "./SectionHeading";

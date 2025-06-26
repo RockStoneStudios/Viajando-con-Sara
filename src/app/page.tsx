@@ -10,7 +10,7 @@ import Products from "./components/Products";
 import Reviews from "./components/Reviews";
 import ScrollingOffers from "./components/ScrollingOffers";
 import Social from "./components/Social";
-import Superheader from "./components/Superheader";
+
 
 export default function Home() {
     return (

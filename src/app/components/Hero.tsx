@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "./Container";
-import icons from "../icons";
 import WhiteExternalButton from "./WhiteExternalButton";
 
 export default function Hero() {
