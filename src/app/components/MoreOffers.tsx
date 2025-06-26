@@ -25,7 +25,7 @@ export default function MoreOffers() {
                             </button>
                         </div>
                         <div className="basis-0 grow">
-                            <Image src="/images/offer-2.jpg" alt="" />
+                            <Image src="/images/offer-2.jpg" alt=""  width={350} height={350} />
                         </div>
                     </div>
 
@@ -45,7 +45,7 @@ export default function MoreOffers() {
                             </button>
                         </div>
                         <div className="basis-0 grow">
-                            <Image src="/images/offer-3.jpg" alt="" />
+                            <Image src="/images/offer-3.jpg" alt="" width={350} height={350} />
                         </div>
                     </div>
                 </div>

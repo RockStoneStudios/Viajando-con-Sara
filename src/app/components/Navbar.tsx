@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import Container from "./Container";
 import icons from "../icons";
 import PrimaryButton from "./PrimaryButton";
+import Image from "next/image";
+
 
 export default function Navbar() {
     const [active, setActive] = useState(false);
@@ -19,7 +21,8 @@ export default function Navbar() {
                     <button className="hover:cursor-pointer md:hidden" onClick={toggleNav}>
                         {icons.menu}
                     </button>
-                    <a href="#" className="text-2xl font-semibold">Viajando<span className="text-orange-600">ConSara</span></a>
+                    {/* <a href="#" className="text-2xl font-semibold">Viajando<span className="text-orange-600">ConSara</span></a> */}
+                    <Image src="/images/sara.jpg" alt="Tour" width={80} height={40} className="w-full" />
                 </div>
 
                 <div className={`${active ? "flex" : "hidden"} flex-col md:flex-row items-center gap-4 order-3 grow w-full mt-4 xl:order-[revert] xl:mt-0 xl:w-auto xl:grow-0 md:flex`}>

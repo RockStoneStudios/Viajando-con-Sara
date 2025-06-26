@@ -53,7 +53,7 @@ export default function Benefits() {
                         <div className="flex justify-center items-start">
                         
 
-                             <Image src="/images/tour.jpg" alt="Tour" width={500} height={300} className="w-full" />
+                             <Image src="/images/sara.jpg" alt="Tour" width={500} height={500} className="w-full" />
 
                         </div>
                         <div className="flex flex-col gap-y-16">

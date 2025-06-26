@@ -61,9 +61,11 @@ export default function FeaturedDestinations() {
                             <div className="flex flex-col gap-6 @min-xl:flex-row">
                                 <div className="relative basis-0 grow">
                                     <Image
+                                        
                                         src={dest.image}
                                         alt=""
                                         className="aspect-square w-full object-center object-cover rounded-2xl"
+                                        width={350} height={350} 
                                     />
 
                                     <div className="absolute top-3 left-3 px-4 py-2 rounded-md bg-slate-800/70 text-white">

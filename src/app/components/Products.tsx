@@ -37,7 +37,7 @@ export default function Products() {
                     {products.map((product, i) => (
                         <div key={i} className="basis-0 grow group hover:cursor-pointer">
                             <div className="p-5 rounded-xl border h-full overflow-hidden">
-                                <Image src={product.image} alt="" className="w-full h-full object-contain object-center group-hover:scale-115 duration-300" />
+                                <Image fill src={product.image} alt="" className="w-full h-full object-contain object-center group-hover:scale-115 duration-300" />
                             </div>
 
                             <h3 className="text-2xl text-center my-3 font-semibold uppercase">{product.title}</h3>
