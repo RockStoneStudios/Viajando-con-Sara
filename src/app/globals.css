@@ -7,6 +7,18 @@ html {
 }
 
 
+/* Ocultar la barra de scroll horizontal pero mantener el scroll funcional */
+.hide-horizontal-scrollbar {
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
+.hide-horizontal-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+
 @theme {
     --font-sans: "Poppins";
 
