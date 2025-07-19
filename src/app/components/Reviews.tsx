@@ -32,11 +32,11 @@ export default function Reviews() {
     }
 ];
     const colors = [
-        "bg-sky-300",
-        "bg-emerald-400",
-        "bg-orange-300",
-        "bg-fuchsia-400",
-        "bg-yellow-400"
+        "bg-sky-900",
+        "bg-emerald-900",
+        "bg-orange-700",
+        "bg-fuchsia-700",
+        "bg-yellow-700"
     ];
 
     const getColor = () => {
@@ -47,7 +47,7 @@ export default function Reviews() {
     return (
         <section className="py-40 bg-orange-50">
             <Container>
-                <HeadingLabel text="Reviews" />
+                <HeadingLabel text="Reseñas" />
                 <SectionHeading>
                     Nuestros Clientes{" "}
                     <span className="text-orange-600">Nos Quieren</span>
@@ -63,10 +63,10 @@ export default function Reviews() {
                                 key={i}
                                 className={`p-10 rounded-2xl ${getColor()} text-xl uppercase font-bold mx-6 min-w-80 basis-0 grow text-center nth-[even]:mt-20 nth-[odd]:mb-20`}
                             >
-                                <p className="mb-4">
+                                <p className="mb-4 text-white">
                                     &ldquo;{review.text}&rdquo;
                                 </p>
-                                <hr className="my-6" />
+                                <hr className="my-6 text-white  " />
                                 <p>{review.name}</p>
                             </div>
                         ))}
