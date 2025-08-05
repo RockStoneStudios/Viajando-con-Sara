@@ -14,14 +14,34 @@ const destinations = [
     color: "bg-amber-600",
     duration: "3 días y 2 noches",
     includes: [
-      "Hotel con aire acondicionado",
-      "Tour por la Ciudad Amurallada",
-      "Paseo en chiva nocturna",
-      "Desayuno buffet",
-      "Almuerzo típico en Getsemaní",
-      "Transporte aeropuerto-hotel",
+      "Tiquetes Aereos",
+      "Traslados aeropuerto hotel aeropuerto",
+      "Alojamiento",
+      "Alimentación de acuerdo a hotel elegido",
+      "Asistencia médica",
+      "Impuestos hoteleros",
     ],
   },
+  {
+  "slug": "covenas",
+  "image": "/images/covenas.jpg", 
+  "title": "Coveñas",
+  "price": "$550.000", // Ajusta según el valor real
+  "location": "Sucre, Colombia",
+  "color": "bg-emerald-600", // Verde esmeralda para playas y naturaleza
+  "duration": "2 días y 1 noche", // Ajusta según el plan
+  "includes": [
+    "Transporte ida y regreso en buses de turismo",
+    "Alojamiento según número de noches",
+    "Alimentación según plan",
+    "Asistencia médica",
+    "Guía acompañante"
+  ],
+  "excludes": [
+    "Gastos no especificados",
+    "Actividades opcionales (ej. paseos en lancha)"
+  ]
+},
   {
     slug: "isla-margarita",
     image: "/images/isla_margarita.jpeg",
@@ -39,6 +59,29 @@ const destinations = [
       "Actividades acuáticas",
     ],
   },
+  {
+  "slug": "san-andres",
+  "image": "/images/san-andres.jpg", 
+  "title": "San Andrés",
+  "price": "$1.200.000", // Ajusta según el valor real
+  "location": "Archipiélago de San Andrés, Colombia",
+  "color": "bg-blue-500", // Color azul para reflejar el mar
+  "duration": "4 días y 3 noches", // Ajusta según el plan
+  "includes": [
+    "Tiquete Aéreo Ida y Regreso",
+    "Equipaje Personal (45x35x25 cm)",
+    "Alojamiento según noches",
+    "Alimentación según plan",
+    "Asistencia Médica",
+    "Impuestos Aéreos y Hoteleros",
+    "Traslado Aeropuerto-Hotel-Aeropuerto"
+  ],
+  "excludes": [
+    "Asignación de Silla",
+    "Gastos no especificados",
+    "Tarjeta de Entrada Isla ($146.000 + impuestos coralinos)"
+  ]
+},
   {
     slug: "tour-santa-elena",
     image: "/images/tour_santa_elena.jpeg",
