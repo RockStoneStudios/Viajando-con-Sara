@@ -41,6 +41,14 @@ export default function FeaturedDestinations() {
       "color": "bg-emerald-600"  
     },
     {
+      "slug": "fiesta-silletera",
+      "image": "/images/santa.jpg",
+      "title": "Fiesta Silletera Bajo las Estrellas",
+      "price": "$150.000",
+      "location": "Santa Elena, Medellín",
+      "color": "bg-purple-600"
+    },
+    {
       slug: 'isla-margarita',
       image: '/images/isla_margarita.jpeg',
       title: 'Isla Margarita',

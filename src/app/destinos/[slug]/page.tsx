@@ -23,6 +23,55 @@ const destinations = [
     ],
   },
   {
+    "slug": "fiesta-silletera-santa-helena",
+    "image": "/images/santa.jpg",
+    "title": "Fiesta Silletera Bajo las Estrellas",
+    "subtitle": "2, 3, 6, 7, 8, 9 AGOSTO",
+    "price": "$150.000", // Ajusta según el valor real
+    "location": "Santa Elena, Medellín, Colombia",
+    "color": "bg-purple-600", // Color festivo (puedes cambiarlo)
+    "schedule": {
+      "start": "4:30 pm",
+      "end": "11:30 pm",
+      "meetingPoint": "Estación Estado del Metro"
+    },
+    "highlights": [
+      "Chiva rumbera con DJ en vivo",
+      "Música en vivo y bandas musicales",
+      "Festival de Trova",
+      "Fonda Musical",
+      "Bingo con premios",
+      "Fiesta animada en el regreso"
+    ],
+    "includes": [
+      "Transporte en Chiva Rumbera",
+      "DJ animador en la chiva",
+      "Picada personal",
+      "1/4 de Guaro por persona",
+      "Sombrero montañero",
+      "Copa aguardientera",
+      "Ingreso a la Finca Silletera"
+    ],
+    "itinerary": [
+      {
+        "time": "4:30 pm",
+        "activity": "Salida en chiva desde Estación Estado del Metro"
+      },
+      {
+        "time": "6:00 pm",
+        "activity": "Llegada a Finca Silletera: música en vivo, festival de trova, bingo"
+      },
+      {
+        "time": "10:30 pm",
+        "activity": "Regreso en chiva con fiesta animada"
+      },
+      {
+        "time": "11:30 pm",
+        "activity": "Fin del evento en La 70"
+      }
+    ]
+  },
+  {
   "slug": "covenas",
   "image": "/images/covenas.jpg", 
   "title": "Coveñas",
