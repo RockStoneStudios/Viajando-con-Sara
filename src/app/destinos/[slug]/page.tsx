@@ -24,7 +24,7 @@ const destinations = [
   },
   {
   "slug": "covenas",
-  "image": "/images/covenas.jpg", 
+  "image": "/images/coveñas.jpg", 
   "title": "Coveñas",
   "price": "$550.000", // Ajusta según el valor real
   "location": "Sucre, Colombia",
