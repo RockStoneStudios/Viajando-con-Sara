@@ -23,7 +23,7 @@ const destinations = [
     ],
   },
   {
-    "slug": "fiesta-silletera-santa-helena",
+    "slug": "fiesta-silletera",
     "image": "/images/santa.jpg",
     "title": "Fiesta Silletera Bajo las Estrellas",
     "subtitle": "2, 3, 6, 7, 8, 9 AGOSTO",
