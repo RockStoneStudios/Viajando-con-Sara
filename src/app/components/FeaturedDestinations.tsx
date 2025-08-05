@@ -33,6 +33,14 @@ export default function FeaturedDestinations() {
       color: 'bg-amber-600',
     },
     {
+      "slug": "covenas",
+      "image": "/images/covenas.jpg",  
+      "title": "Coveñas",
+      "price": "$550.000",  
+      "location": "Sucre, Colombia",
+      "color": "bg-emerald-600"  
+    },
+    {
       slug: 'isla-margarita',
       image: '/images/isla_margarita.jpeg',
       title: 'Isla Margarita',
