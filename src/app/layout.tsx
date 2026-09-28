@@ -37,7 +37,20 @@ export const metadata: Metadata = {
         },
     },
 
-    // 🔽 AQUÍ VA TU CÓDIGO DE VERIFICACIÓN 🔽
+    // 🔽 ICONOS (FAVICON) 🔽
+    icons: {
+        icon: [
+            { url: "/favicon.ico", sizes: "any" },
+            { url: "/icon0.png", sizes: "192x192", type: "image/png" },
+            { url: "/icon1.png", sizes: "512x512", type: "image/png" },
+        ],
+        apple: [
+            { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+        ],
+    },
+    manifest: "/manifest.json",
+
+    // 🔽 VERIFICACIÓN DE GOOGLE 🔽
     verification: {
         google: "6ZZj9grznlQUdD-Zl1_UMczXHbnj7UgE1hDRbmgFkk8",
     },

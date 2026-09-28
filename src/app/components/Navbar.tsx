@@ -5,46 +5,67 @@ import icons from "../icons";
 import PrimaryButton from "./PrimaryButton";
 import Image from "next/image";
 
-
 export default function Navbar() {
     const [active, setActive] = useState(false);
 
     const toggleNav = () => {
         setActive(!active);
-    }
+    };
 
     return (
         <Container>
-            <nav className="flex items-center justify-between gap-6 py-6 flex-wrap">
-
+            <nav className="flex items-center justify-between gap-4 py-2 md:py-3 relative">
+                {/* Logo + hamburguesa */}
                 <div className="flex items-center gap-x-2">
-                    <button className="hover:cursor-pointer md:hidden" onClick={toggleNav}>
+                    <button
+                        className="hover:cursor-pointer md:hidden"
+                        onClick={toggleNav}
+                        aria-label="Abrir menú"
+                    >
                         {icons.menu}
                     </button>
-                    {/* <a href="#" className="text-2xl font-semibold">Viajando<span className="text-orange-600">ConSara</span></a> */}
-                    <Image src="/images/sara.jpg" alt="Tour" width={80} height={40} className="w-full" />
+                    <Image
+                        src="/images/sara.jpg"
+                        alt="Viaja con Sara"
+                        width={80}
+                        height={40}
+                        className="w-12 md:w-16 h-auto"
+                    />
                 </div>
 
-                <div className={`${active ? "flex" : "hidden"} flex-col md:flex-row items-center gap-4 order-3 grow w-full mt-4 xl:order-[revert] xl:mt-0 xl:w-auto xl:grow-0 md:flex`}>
-                      <a href="#destinos">Destinos</a>
-                        <span className="h-4 w-px bg-gray-300"></span>
-                        <a href="#paquetes">Paquetes Turísticos</a>
-                        <span className="h-4 w-px bg-gray-300"></span>
-                        <a href="#vuelos">Vuelos y Hoteles</a>
-                        <span className="h-4 w-px bg-gray-300"></span>
-                        <a href="#guias">Guías de Viaje</a>
-                        <span className="h-4 w-px bg-gray-300"></span>
-                        <a href="#nosotros">Sobre Nosotros</a>
-                        <span className="h-4 w-px bg-gray-300"></span>
-                        <a href="https://wa.me/573004526484">Contacto</a>
+                {/* Enlaces: menú desplegable en móvil, horizontal en desktop */}
+                <div
+                    className={`
+                        ${active ? "flex" : "hidden"}
+                        md:flex
+                        absolute md:static
+                        top-full left-0 right-0
+                        bg-white md:bg-transparent
+                        shadow-md md:shadow-none
+                        flex-col md:flex-row
+                        items-start md:items-center
+                        gap-3 md:gap-4
+                        p-4 md:p-0
+                        z-50
+                    `}
+                >
+                    <a href="#destinos" className="w-full md:w-auto py-2 md:py-0 text-sm">Destinos</a>
+                    <span className="hidden md:block h-4 w-px bg-gray-300"></span>
+                    <a href="#paquetes" className="w-full md:w-auto py-2 md:py-0 text-sm">Paquetes Turísticos</a>
+                    <span className="hidden md:block h-4 w-px bg-gray-300"></span>
+                    <a href="#vuelos" className="w-full md:w-auto py-2 md:py-0 text-sm">Vuelos y Hoteles</a>
+                    <span className="hidden md:block h-4 w-px bg-gray-300"></span>
+                    <a href="#guias" className="w-full md:w-auto py-2 md:py-0 text-sm">Guías de Viaje</a>
+                    <span className="hidden md:block h-4 w-px bg-gray-300"></span>
+                    <a href="#nosotros" className="w-full md:w-auto py-2 md:py-0 text-sm">Sobre Nosotros</a>
+                    <span className="hidden md:block h-4 w-px bg-gray-300"></span>
+                    <a href="https://wa.me/573004526484" className="w-full md:w-auto py-2 md:py-0 text-sm">Contacto</a>
                 </div>
 
-               <div className="hidden md:flex items-center gap-x-6">
-                    <PrimaryButton>
-                        Reserva
-                    </PrimaryButton>
+                {/* Botón Reserva (solo desktop) */}
+                <div className="hidden md:flex items-center gap-x-6">
+                    <PrimaryButton>Reserva</PrimaryButton>
                 </div>
-
             </nav>
         </Container>
     );
