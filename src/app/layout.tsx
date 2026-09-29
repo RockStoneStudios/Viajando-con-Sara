@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     icons: {
         icon: [
             { url: "/favicon.ico", sizes: "any" },
-            { url: "/icon0.png", sizes: "192x192", type: "image/png" },
+            { url: "/icon0.svg", type: "image/svg+xml" },
             { url: "/icon1.png", sizes: "512x512", type: "image/png" },
         ],
         apple: [
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
         description: "Explora destinos impresionantes con precios competitivos. Especialistas en la Costa, Eje Cafetero, gestión de pasaporte y experiencias personalizadas.",
         images: [
             {
-                url: "/sara.jpg",
+                url: "/images/sara.jpg",
                 width: 1200,
                 height: 630,
                 alt: "Viaja con Sara - Paquetes Turísticos a Colombia",
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Viaja con Sara | Paquetes Turísticos a Colombia y el Mundo",
         description: "Paquetes turísticos a la Costa, Eje Cafetero y más. Asesoría 24/7 y gestión de pasaporte. ¡Tu viaje soñado comienza aquí!",
-        images: ["/sara.jpg"],
+        images: ["/images/sara.jpg"],
     },
 
     alternates: {
