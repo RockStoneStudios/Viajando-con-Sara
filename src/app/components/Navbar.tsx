@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import Container from "./Container";
 import icons from "../icons";
 import PrimaryButton from "./PrimaryButton";
-import Image from "next/image";
 
 export default function Navbar() {
     const [active, setActive] = useState(false);
@@ -24,7 +25,7 @@ export default function Navbar() {
                     >
                         {icons.menu}
                     </button>
-                    <a href="/">
+                    <Link href="/">
                         <Image
                             src="/images/sara.jpg"
                             alt="Viaja con Sara"
@@ -32,10 +33,10 @@ export default function Navbar() {
                             height={40}
                             className="w-12 md:w-16 h-auto"
                         />
-                    </a>
+                    </Link>
                 </div>
 
-                {/* Enlaces: menú desplegable en móvil, horizontal en desktop */}
+                {/* Enlaces */}
                 <div
                     className={`
                         ${active ? "flex" : "hidden"}
@@ -51,24 +52,74 @@ export default function Navbar() {
                         z-50
                     `}
                 >
-                    <a href="/dia-de-sol" className="w-full md:w-auto py-2 md:py-0 text-sm font-semibold text-orange-600 hover:text-orange-700">
+                    {/* Página interna: usa <Link> */}
+                    <Link
+                        href="/dias-de-sol"
+                        className="w-full md:w-auto py-2 md:py-0 text-sm font-semibold text-orange-600 hover:text-orange-700 transition-colors"
+                        onClick={() => setActive(false)}
+                    >
                         Días de Sol
+                    </Link>
+                    <span className="hidden md:block h-4 w-px bg-gray-300"></span>
+
+                    {/* Anclas internas de la home: usa <Link> también */}
+                    <Link
+                        href="/#destinos"
+                        className="w-full md:w-auto py-2 md:py-0 text-sm hover:text-orange-600 transition-colors"
+                        onClick={() => setActive(false)}
+                    >
+                        Destinos
+                    </Link>
+                    <span className="hidden md:block h-4 w-px bg-gray-300"></span>
+
+                    <Link
+                        href="/#paquetes"
+                        className="w-full md:w-auto py-2 md:py-0 text-sm hover:text-orange-600 transition-colors"
+                        onClick={() => setActive(false)}
+                    >
+                        Paquetes Turísticos
+                    </Link>
+                    <span className="hidden md:block h-4 w-px bg-gray-300"></span>
+
+                    <Link
+                        href="/#vuelos"
+                        className="w-full md:w-auto py-2 md:py-0 text-sm hover:text-orange-600 transition-colors"
+                        onClick={() => setActive(false)}
+                    >
+                        Vuelos y Hoteles
+                    </Link>
+                    <span className="hidden md:block h-4 w-px bg-gray-300"></span>
+
+                    <Link
+                        href="/#guias"
+                        className="w-full md:w-auto py-2 md:py-0 text-sm hover:text-orange-600 transition-colors"
+                        onClick={() => setActive(false)}
+                    >
+                        Guías de Viaje
+                    </Link>
+                    <span className="hidden md:block h-4 w-px bg-gray-300"></span>
+
+                    <Link
+                        href="/#nosotros"
+                        className="w-full md:w-auto py-2 md:py-0 text-sm hover:text-orange-600 transition-colors"
+                        onClick={() => setActive(false)}
+                    >
+                        Sobre Nosotros
+                    </Link>
+                    <span className="hidden md:block h-4 w-px bg-gray-300"></span>
+
+                    {/* Enlace externo: se queda como <a> */}
+                    <a
+                        href="https://wa.me/573004526484"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full md:w-auto py-2 md:py-0 text-sm hover:text-orange-600 transition-colors"
+                    >
+                        Contacto
                     </a>
-                    <span className="hidden md:block h-4 w-px bg-gray-300"></span>
-                    <a href="#destinos" className="w-full md:w-auto py-2 md:py-0 text-sm">Destinos</a>
-                    <span className="hidden md:block h-4 w-px bg-gray-300"></span>
-                    <a href="#paquetes" className="w-full md:w-auto py-2 md:py-0 text-sm">Paquetes Turísticos</a>
-                    <span className="hidden md:block h-4 w-px bg-gray-300"></span>
-                    <a href="#vuelos" className="w-full md:w-auto py-2 md:py-0 text-sm">Vuelos y Hoteles</a>
-                    <span className="hidden md:block h-4 w-px bg-gray-300"></span>
-                    <a href="#guias" className="w-full md:w-auto py-2 md:py-0 text-sm">Guías de Viaje</a>
-                    <span className="hidden md:block h-4 w-px bg-gray-300"></span>
-                    <a href="#nosotros" className="w-full md:w-auto py-2 md:py-0 text-sm">Sobre Nosotros</a>
-                    <span className="hidden md:block h-4 w-px bg-gray-300"></span>
-                    <a href="https://wa.me/573004526484" className="w-full md:w-auto py-2 md:py-0 text-sm">Contacto</a>
                 </div>
 
-                {/* Botón Reserva (solo desktop) */}
+                {/* Botón Reserva */}
                 <div className="hidden md:flex items-center gap-x-6">
                     <PrimaryButton>Reserva</PrimaryButton>
                 </div>
