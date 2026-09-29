@@ -54,7 +54,7 @@ export default function Navbar() {
                 >
                     {/* Página interna: usa <Link> */}
                     <Link
-                        href="/dias-de-sol"
+                        href="/dia-de-sol"
                         className="w-full md:w-auto py-2 md:py-0 text-sm font-semibold text-orange-600 hover:text-orange-700 transition-colors"
                         onClick={() => setActive(false)}
                     >
