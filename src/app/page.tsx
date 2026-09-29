@@ -3,6 +3,7 @@ import CTA from "./components/CTA";
 import FeaturedDestinations from "./components/FeaturedDestinations";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
+import MonthlyDeals from "./components/MonthlyDeals";
 import MoreOffers from "./components/MoreOffers";
 import Navbar from "./components/Navbar";
 import Offers from "./components/Offers";
@@ -24,7 +25,9 @@ export default function Home() {
             <section id="paquetes">
                   <Offers />
             </section>
-
+            <section>
+                 <MonthlyDeals />
+            </section>
             <section id="vuelos">
                  <MoreOffers />
             </section>

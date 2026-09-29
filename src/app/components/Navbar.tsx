@@ -24,13 +24,15 @@ export default function Navbar() {
                     >
                         {icons.menu}
                     </button>
-                    <Image
-                        src="/images/sara.jpg"
-                        alt="Viaja con Sara"
-                        width={80}
-                        height={40}
-                        className="w-12 md:w-16 h-auto"
-                    />
+                    <a href="/">
+                        <Image
+                            src="/images/sara.jpg"
+                            alt="Viaja con Sara"
+                            width={80}
+                            height={40}
+                            className="w-12 md:w-16 h-auto"
+                        />
+                    </a>
                 </div>
 
                 {/* Enlaces: menú desplegable en móvil, horizontal en desktop */}
@@ -49,6 +51,10 @@ export default function Navbar() {
                         z-50
                     `}
                 >
+                    <a href="/dia-de-sol" className="w-full md:w-auto py-2 md:py-0 text-sm font-semibold text-orange-600 hover:text-orange-700">
+                        Días de Sol
+                    </a>
+                    <span className="hidden md:block h-4 w-px bg-gray-300"></span>
                     <a href="#destinos" className="w-full md:w-auto py-2 md:py-0 text-sm">Destinos</a>
                     <span className="hidden md:block h-4 w-px bg-gray-300"></span>
                     <a href="#paquetes" className="w-full md:w-auto py-2 md:py-0 text-sm">Paquetes Turísticos</a>
